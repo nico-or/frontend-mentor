@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500;700');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font: inherit;
+  list-style: none;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --grey-light: hsl(217, 12%, 63%);
+  --grey-medium: hsl(216, 12%, 54%);
+  --blue-dark: hsl(213, 19%, 18%);
+  --blue-very-dark: hsl(216, 12%, 8%);
+
+  font-size: 15px;
+  font-family: 'Overpass';
+  font-weight: 500;
+}
+
+/* Utilities */
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Card */
+.card {
+  max-width: 350px;
+  margin: 0 24px;
+  padding: 24px;
+  border-radius: 30px;
+
+  background-color: hsl(215, 22%, 15%);
+}
+
+/* Ranking View*/
+.rank-us {
+  gap: 24px;
+}
+
+/* Card Text */
+.rank-us h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.rank-us p {
+  color: var(--grey-light);
+}
+
+
+/* Button */
+.rank-us button {
+  --height: 45px;
+  width: 100%;
+  height: var(--height);
+  border-radius: var(--height);
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* button Colors*/
+.rank-us button {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.rank-us button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+/* Round elements */
+.round {
+  --radius: 45px;
+  height: var(--radius);
+  width: var(--radius);
+  border-radius: var(--radius);
+  background-color: hsl(210, 19%, 18%);
+}
+
+/* Rating Form */
+.rating-form {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.rating-form .round {
+  color: var(--grey-light);
+  background-color: hsl(210, 19%, 18%);
+}
+
+.rating-form .round:hover {
+  color: var(--white);
+  background-color: var(--grey-medium);
+}
+
+.rating-form .selected {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+/* Thank You view */
+.thank-you {
+  padding: 15px 0;
+}
+
+.thank-you img {
+  width: 150px;
+  padding-bottom: 20px;
+}
+
+.thank-you h1 {
+  color: var(--white);
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.thank-you p {
+  color: var(--grey-light);
+  line-height: 1.4;
+}
+
+.text-orange {
+  color: var(--orange) !important;
+}
+
+.pill {
+  background-color: var(--blue-dark);
+  padding: 10px 15px;
+  border-radius: 100vh;
+}
